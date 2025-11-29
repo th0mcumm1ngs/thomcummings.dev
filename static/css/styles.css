@@ -26,6 +26,13 @@ button {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: clamp(5px, 2vw, 20px);
+
     background-image: url('../img/dot-grid.svg');
     background-repeat: repeat;
     background-size: auto;
@@ -36,9 +43,10 @@ div.header {
     display: flex;
     flex-direction: row;
     vertical-align: middle;
-    height: 10vh;
+    height: 10vh; /* todo: try to get this to match text height, so then image can follow */
     padding: 10px 20px;
     gap: 20px;
+    margin-bottom: 2vw;;
     
     background-color: #EBE6D5;
     border-width: 2px;

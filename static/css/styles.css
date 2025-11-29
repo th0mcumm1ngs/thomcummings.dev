@@ -8,11 +8,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: clamp(1rem, 6vw, 6rem);
+    font-size: inherit;
     font-weight: 500;
     margin: 0;
     align-self: center;
-    padding-bottom: 5px;
 }
 
 h2 {
@@ -42,11 +41,13 @@ body {
 div.header {
     display: flex;
     flex-direction: row;
-    vertical-align: middle;
-    height: 10vh; /* todo: try to get this to match text height, so then image can follow */
+    align-items: center;
+    height: auto;
     padding: 10px 20px;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 2vw;
+
+    font-size: clamp(1rem, 6vw, 6rem);
     
     background-color: #EBE6D5;
     border-width: 2px;
@@ -152,6 +153,7 @@ button.nav-arw-btn {
 
 img.site-icon {
     size: auto;
+    max-height: 1.5em;
     vertical-align: middle;
     filter: drop-shadow(5px 5px 5px #00000025);
 }

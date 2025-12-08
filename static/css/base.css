@@ -108,11 +108,66 @@ button.filter-btn {
     box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.25);
 }
 
-button.filter-logic-btn {
+button.filter-logic-toggle {
     background: none;
     border: none;
-    font-size: 4rem;
     padding: 0;
+}
+
+button.filter-logic-toggle svg {
+    width: 2rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Toggle visibility of AND/OR icons and labels based on data-state attribute */
+
+button.filter-logic-toggle[data-state="and"] .icon-or,
+button.filter-logic-toggle[data-state="and"] .label-or {
+    opacity: 0;
+    pointer-events: none;
+}
+button.filter-logic-toggle[data-state="and"] .icon-and,
+button.filter-logic-toggle[data-state="and"] .label-and {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+button.filter-logic-toggle[data-state="or"] .icon-and,
+button.filter-logic-toggle[data-state="or"] .label-and {
+    opacity: 0;
+    pointer-events: none;
+}
+button.filter-logic-toggle[data-state="or"] .icon-or,
+button.filter-logic-toggle[data-state="or"] .label-or {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Spin animation for logic toggle button */
+
+@keyframes logic-spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(540deg); }
+    100% { transform: rotate(900deg); }
+}
+
+button.filter-logic-toggle.toggling .icon-and,
+button.filter-logic-toggle.toggling .icon-or {
+    animation: logic-spin 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.label-and
+.label-or {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button.filter-logic-toggle.toggling .label-and,
+button.filter-logic-toggle.toggling .label-or {
+    opacity: 0;
+    transform: translateY(4px);
 }
 
 div.creations-content {

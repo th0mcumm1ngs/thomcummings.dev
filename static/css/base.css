@@ -114,6 +114,10 @@ div.creations-content {
     border: 2px solid red;
 }
 
+h2.creations-title {
+    padding: 0px;
+}
+
 div.nav-bar {
     border: 2px solid red;
     width: 80px;

@@ -89,6 +89,7 @@ div.filters {
     justify-content: space-around;
     vertical-align: middle;
     width: 100%;
+    max-width: 500px;
 }
 
 button.filter-btn {

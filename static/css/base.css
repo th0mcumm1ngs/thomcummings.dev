@@ -64,8 +64,6 @@ div.content {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
-    
-    border: 2px solid red;
 }
 
 div.sections {
@@ -74,7 +72,6 @@ div.sections {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    border: 2px solid red;
 }
 
 div.creations {
@@ -84,7 +81,6 @@ div.creations {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    border: 2px solid red;
 }
 
 div.filters {
@@ -111,7 +107,6 @@ button.filter-btn {
 div.creations-content {
     width: 100%;
     flex-grow: 1;
-    border: 2px solid red;
 }
 
 h2.creations-title {
@@ -119,7 +114,6 @@ h2.creations-title {
 }
 
 div.nav-bar {
-    border: 2px solid red;
     width: 80px;
     
     display: flex;

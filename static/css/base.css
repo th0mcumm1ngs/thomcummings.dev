@@ -1,0 +1,68 @@
+html {
+    font-size: 10px;
+    font-family: new-spirit, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: inherit;
+    font-weight: 500;
+    margin: 0;
+    align-self: center;
+}
+
+h2 {
+    font-size: 6rem;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: clamp(5px, 2vw, 20px);
+    gap: 20px;
+
+    background-color: #AB3118;
+}
+
+div.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 5px;
+
+    font-size: 5em;
+    color: #fafafa;
+}
+
+div.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    background-image: url('../img/dot-grid.svg');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+img.site-icon {
+    size: auto;
+    max-height: 1.5em;
+    vertical-align: middle;
+    filter: drop-shadow(5px 5px 5px #00000025);
+}

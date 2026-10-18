@@ -31,31 +31,21 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: clamp(5px, 2vw, 20px);
+    gap: 20px;
 
-    background-image: url('../img/dot-grid.svg');
-    background-repeat: repeat;
-    background-size: auto;
-    background-color: #e8e0cb;
+    background-color: #AB3118;
 }
 
 div.header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     height: auto;
-    padding: 10px 20px;
-    gap: 10px;
-    margin-bottom: 2vw;
+    gap: 5px;
 
-    font-size: clamp(1rem, 6vw, 6rem);
-    
-    background-color: #EBE6D5;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #CFBFA6;
-    border-radius: 20px;
-
-    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.25);
+    font-size: 5em;
+    color: #fafafa;
 }
 
 div.content {
@@ -64,83 +54,10 @@ div.content {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
-}
 
-div.sections {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-}
-
-div.creations {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-div.filters {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    vertical-align: middle;
-    width: 100%;
-    max-width: 500px;
-}
-
-button.filter-btn {
-    font-family: new-spirit, serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-
-    background-color: #EBE6D5;
-    border: 2px solid #CFBFA6;
-    border-radius: 10px;
-    padding: 8px 16px;
-
-    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.25);
-}
-
-div.creations-content {
-    width: 100%;
-    flex-grow: 1;
-}
-
-h2.creations-title {
-    padding: 0px;
-}
-
-div.nav-bar {
-    width: 80px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-button.nav-sctn-btn {
-    font-family: new-spirit, serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-
-    background: none;
-    border: none;
-}
-
-button.nav-arw-btn {
-    font-family: new-spirit, serif;
-    font-weight: 400;
-    font-size: 3rem;
-
-    background: none;
-    border: none;
+    background-image: url('../img/dot-grid.svg');
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 img.site-icon {

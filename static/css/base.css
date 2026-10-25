@@ -1,3 +1,24 @@
+
+@font-face {
+    font-family: "Cascadia Code";
+    src: url("../fonts/CascadiaCode.woff2") format("woff2");
+    font-weight: 200 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Caslon Condensed";
+    src: url("../fonts/LibreCaslonCondensed.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 10px;
     font-family: new-spirit, serif;
@@ -50,10 +71,7 @@ div.header {
 
 div.content {
     flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
+    padding: 60px;
 
     background-image: url('../img/dot-grid.svg');
     background-repeat: repeat;

@@ -112,6 +112,14 @@ body {
     background-size: auto;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    color: #fafafa50;
+}
+
 .site-icon {
     size: auto;
     max-height: 1.5em;
